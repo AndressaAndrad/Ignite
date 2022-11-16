@@ -13,5 +13,6 @@ module.exports = {
     'import/no-unresolved': 'off',
     'no-shadow': 'off',
     'no-undef': 'off',
+    'prefer-template': 'off',
   },
 };
