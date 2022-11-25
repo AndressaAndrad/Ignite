@@ -24,5 +24,20 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'lines-between-class-members': 'off',
     'camelcase': 'off',
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ],
+    "import/extensions": "off",
+    'class-methods-use-this': 'off',
+    'no-useless-constructor': 'off',
+    'no-console': 'off'
   },
 };
