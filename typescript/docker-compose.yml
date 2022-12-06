@@ -24,9 +24,9 @@ services:
     volumes:
       - .:/usr/app
     links:
-      - rentx
+      - database_ignite
     depends_on:
-      - rentx
+      - database_ignite
 
 
 volumes:
