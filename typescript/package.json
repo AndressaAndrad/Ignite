@@ -31,8 +31,11 @@
     "icons": "^1.0.0",
     "material": "^0.4.3",
     "multer": "^1.4.5-lts.1",
+    "pg": "^8.8.0",
+    "reflect-metadata": "^0.1.13",
     "swagger-ui-express": "^4.6.0",
     "theme": "^0.1.0",
+    "typeorm": "0.2.45",
     "uuid": "^9.0.0"
   }
 }
