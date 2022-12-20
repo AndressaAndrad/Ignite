@@ -10,7 +10,7 @@ class CreateSpecificationUseCase {
 
   execute({ name, description }: IRequest): void {
     const specificationAlreadyExists =
-      this.specificationRepository.findByName(name);
+      this.specificationRepository.(name);
 
     if (specificationAlreadyExists) {
       throw new Error('Specification already exists!');

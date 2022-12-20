@@ -3,6 +3,7 @@
         "camelcase",
         "está",
         "rodando",
-        "Servidor"
+        "Servidor",
+        "tsyringe"
     ]
 }
