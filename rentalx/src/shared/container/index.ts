@@ -6,17 +6,8 @@ import { ISpecificationRepository } from '../../modules/cars/repositories/ISpeci
 import { CategoriesRepository } from '../../modules/cars/repositories/implementations/CategoriesRepository';
 import { SpecificationRepository } from '../../modules/cars/repositories/implementations/SpecificationRepository';
 
-container.registerSingleton<ICategoriesRepository>(
-  'CategoriesRepository',
-  CategoriesRepository,
-);
+container.registerSingleton<ICategoriesRepository>('CategoriesRepository', CategoriesRepository);
 
-container.registerSingleton<ISpecificationRepository>(
-  'SpecificationRepository',
-  SpecificationRepository,
-);
+container.registerSingleton<ISpecificationRepository>('SpecificationRepository', SpecificationRepository);
 
-container.registerSingleton<IUsersRepository>(
-  'UsersRepository',
-  UsersRepository,
-);
+container.registerSingleton<IUsersRepository>('UsersRepository', UsersRepository);
