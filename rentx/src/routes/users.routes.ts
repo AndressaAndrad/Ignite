@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import { AuthenticateUserController } from '../modules/accounts/UseCases/authenticateUser/AuthenticateUserController';
+import { CreateUserController } from '../modules/accounts/UseCases/createUser/CreateUserController';
 
 const usersRoutes = Router();
 
-const authenticateUserController = new AuthenticateUserController();
-usersRoutes.post('/sessions', authenticateUserController.handle);
+const createUserController = new CreateUserController();
+usersRoutes.post('/', createUserController.handle);
 
 export { usersRoutes };
