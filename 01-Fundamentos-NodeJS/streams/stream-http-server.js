@@ -8,10 +8,14 @@ class InverseNumberStream extends Transform {
         callback(null, Buffer.from(String(transformed)))
     }
 }
-const server = http.createServer((request, response) => {
-    return request
-    .pipe(new InverseNumberStream())
-    .pipe(response)
+const server = http.createServer( async (request, response) => {
+    
+    console.log(fullStresmContent)
+    return response.end(fullStresmContent)
+
+    // return request
+    // .pipe(new InverseNumberStream())
+    // .pipe(response)
 })
 
 server.listen(3334)
